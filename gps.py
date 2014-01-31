@@ -96,7 +96,7 @@ while True:
                     lon2=float(lon2)
  
                     #print distance(lat, lon, lat2, lon2)
-                    if (distance(lat, lon, lat2, lon2)<1000):
+                    if (distance(lat, lon, lat2, lon2)<60):
                         exists=1
                     else:
                         exists=0
@@ -121,7 +121,7 @@ while True:
                 print "No signal"
         else:
             print "No signal"
-            #time.sleep(60)  # Delay for 1 minute (60 seconnds)
+            time.sleep(60)  # Delay for 1 minute (60 seconnds)
     except KeyError:
         pass
     except KeyboardInterrupt:
