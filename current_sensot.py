@@ -158,8 +158,7 @@ while True:
     
     #compile data
     pac.update([eeml.Data("Power__coordinates__LAT_"+output, power)])
-    pac.update([eeml.Data("Current", current)])
-    pac.update([eeml.Data("Voltage", cell_reading)])
+
 
     
     # send data to xively
