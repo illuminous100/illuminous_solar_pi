@@ -12,7 +12,7 @@ import time
 import gps
 import math
 
-#calculates the distance between two locations
+#calculates the distance between two locations in meters
 def distance(lat, lon, lat2, lon2):
 
     # Convert latitude and longitude to spherical coordinates in radians.
