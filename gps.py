@@ -96,7 +96,7 @@ while True:
                     lon2=float(lon2)
  
                     #print distance(lat, lon, lat2, lon2)
-                    if (distance(lat, lon, lat2, lon2)<60):
+                    if (distance(lat, lon, lat2, lon2)<1000):
                         exists=1
                     else:
                         exists=0
@@ -107,16 +107,16 @@ while True:
                         values = [output,url]
                         #adds a new row to the spreadsheet with the gps data
                    
-                        worksheet.append_row(values,)
+                        worksheet.append_row(values)
                         print "Wrote a row to the spreadsheet" 
                         #Wait 30 seconds before continuing
-                        #time.sleep(30)
+                        time.sleep(30)
                     except:
                         print "Unable to append data.  Check your connection?"
                         sys.exit()
                 else:
                     print "The coordinate already exists"
-                    #time.sleep(5)
+                    time.sleep(100)
             else:
                 print "No signal"
         else:
